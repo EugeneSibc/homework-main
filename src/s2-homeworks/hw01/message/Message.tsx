@@ -1,6 +1,7 @@
 import React from 'react'
 import s from './Message.module.css'
 import { MessageType } from '../HW1'
+import bubble from './../message.svg'
 
 // нужно создать правильный тип вместо any
 export type MessagePropsType = {

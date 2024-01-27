@@ -2,12 +2,12 @@
     display: flex;
     flex-direction: column;
     align-items: end;
+    
 }
 
 .imageAndText {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: right;
     
 }
 
@@ -15,12 +15,18 @@
     width: 48px;
     height: 48px;
     flex-shrink: 0;
+    margin: 0 0 0 20px;
 }
 
 .text {
     display: flex;
     flex-direction: column;
     align-items: end;
+    background-image: url(../message2.svg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    padding:7px 13px;
 }
 
 .text:after {
