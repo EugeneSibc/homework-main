@@ -1,36 +1,46 @@
 .button {
+    display: inline-flex;
+    padding: 5px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 3px;
+    border: none;
+    
 }
 
 .disabled {
+    opacity: 0.5;
+    background-color: #004D99;
 }
 
 .secondary {
+    border: 1px solid #06C;
+    color:#06C
 }
 
 .default {
+    background-color:  #06C;
+    color:rgba(255, 255, 255, 1)
 }
 
 .red {
+    background-color:  #CC1439;
+    color:rgba(255, 255, 255, 1)
+
 }
 
-.default:hover {
-}
+.default:hover {}
 
-.red:hover {
-}
+.red:hover {}
 
-.secondary:hover {
-}
+.secondary:hover {}
 
 
-.default:active {
-}
+.default:active {}
 
-.secondary:active {
-}
+.secondary:active {}
 
-.red:active {
-}
+.red:active {}
 
-.button:disabled {
-}
+.button:disabled {}
