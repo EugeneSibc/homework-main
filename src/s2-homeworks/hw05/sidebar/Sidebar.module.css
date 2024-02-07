@@ -1,25 +1,50 @@
 .sidebar {
+    display: none;
 }
 
 .sidebar.open {
+    width: 20%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    /* flex-direction: column; */
 }
 
 .background {
+    height: 100 vh;
+    width: 100 vw;
+    backdrop-filter: blur(2px);
+    position: absolute;
 }
 
 .nav {
+    display: flex;
+    flex-direction: column;
+    
+    
 }
 
 .nav a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    text-decoration: none;
 }
 
 .nav a:hover {
+    color:rgba(88, 172, 255, 1);
 }
 
 .nav a.active {
+    color: rgba(0, 89, 178, 1);
+    text-decoration: underline;
+
 }
 .close {
+    width: 24px;
+    height: 24px;
+
 }
 
 .close img {
+    
 }
