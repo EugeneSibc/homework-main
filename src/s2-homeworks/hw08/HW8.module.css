@@ -1,10 +1,13 @@
 .item {
+    /* display: flex;
+    justify-content: start; */
 }
 
 .item:last-of-type {
 }
 
 .users {
+    
 }
 
 .buttonsContainer {
@@ -14,10 +17,14 @@
 }
 
 .thead {
+    background-color: #E5E5E5;
 }
 
+
 .nameCol {
+    margin:0 20px 0 0;
 }
 
 .ageCol {
+    
 }
