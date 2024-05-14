@@ -1,11 +1,12 @@
 .button {
     display: inline-flex;
-    padding: 5px 24px;
+    padding: 5px 20px;
     justify-content: center;
     align-items: center;
     gap: 10px;
     border-radius: 3px;
     border: none;
+    max-width:120px;
     
 }
 
