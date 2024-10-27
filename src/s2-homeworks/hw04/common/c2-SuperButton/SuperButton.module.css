@@ -6,8 +6,8 @@
     gap: 10px;
     border-radius: 3px;
     border: none;
-    max-width:120px;
-    
+    max-width:150px;
+    margin:5px 10px;
 }
 
 .disabled {
