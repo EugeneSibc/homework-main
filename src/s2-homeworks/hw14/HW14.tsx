@@ -31,13 +31,16 @@ const HW14 = () => {
     const [techs, setTechs] = useState<string[]>([])
 
     const sendQuery = (value: string) => {
+        console.log(value)
         setLoading(true)
         getTechs(value)
             .then((res) => {
                 // делает студент
-
+                console.log(res.data.techs)
+                
+                setLoading(false)
                 // сохранить пришедшие данные
-
+                setTechs(res.data.techs)
                 //
             })
     }
@@ -47,7 +50,7 @@ const HW14 = () => {
         // делает студент
 
         // добавить/заменить значение в квери урла
-        // setSearchParams(
+        setSearchParams(value)
 
         //
     }
@@ -75,7 +78,7 @@ const HW14 = () => {
                     onChangeText={onChangeText}
                     onDebouncedChange={sendQuery}
                 />
-
+                
                 <div id={'hw14-loading'} className={s.loading}>
                     {isLoading ? '...ищем' : <br/>}
                 </div>
