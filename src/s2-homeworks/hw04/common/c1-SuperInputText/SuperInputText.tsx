@@ -4,6 +4,7 @@ import React, {
     InputHTMLAttributes,
     KeyboardEvent,
     ReactNode,
+    useState,
 } from 'react'
 import s from './SuperInputText.module.css'
 
@@ -35,6 +36,7 @@ const SuperInputText: React.FC<SuperInputTextPropsType> = (
         ...restProps // все остальные пропсы попадут в объект restProps
     }
 ) => {
+    const [value, setValue] = useState('')
     const onChangeCallback = (e: ChangeEvent<HTMLInputElement>) => {
         onChange?.(e) // если есть пропс onChange, то передать ему е (поскольку onChange не обязателен)
 

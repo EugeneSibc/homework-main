@@ -36,12 +36,12 @@ const HW14 = () => {
         getTechs(value)
             .then((res) => {
                 // делает студент
-                console.log(res.data.techs)
-                
+                //@ts-ignore                
                 setLoading(false)
                 // сохранить пришедшие данные
+                //@ts-ignore
                 setTechs(res.data.techs)
-                //
+                
             })
     }
 

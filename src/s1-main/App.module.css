@@ -12,11 +12,13 @@
     flex-direction: column;
     justify-content: space-between;
     min-height: 200px;
+    margin: 20px 0;
+
 }
 
 
 .hwTitle {
-    margin: 10px 0 20px 0;
+    margin: 20px 0;
     border-top: 1px solid rgba(217, 217, 217, 1);
     border-bottom: 1px solid rgba(217, 217, 217, 1);
     padding: 20px 0 10px 0;
