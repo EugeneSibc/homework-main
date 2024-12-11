@@ -1,8 +1,5 @@
 .select {
-    margin:0 100px 0 0;
-    display: flex;
-    flex-direction: column;
-    max-width: 150px;
+    
 }
 
 .select:focus {

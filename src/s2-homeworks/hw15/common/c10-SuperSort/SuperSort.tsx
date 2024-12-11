@@ -1,5 +1,5 @@
 import React from 'react'
-
+import SwapVertOutlinedIcon from '@mui/icons-material/SwapVertOutlined';
 // добавить в проект иконки и импортировать
 const downIcon = '[\\/]'
 const upIcon = '[/\\]'
@@ -14,7 +14,8 @@ export type SuperSortPropsType = {
 
 export const pureChange = (sort: string, down: string, up: string) => {
     // пишет студент, sort: (click) => down (click) => up (click) => '' (click) => down ...
-    return up // исправить
+    sort = sort === up ? down : up
+    return sort // исправить
 }
 
 const SuperSort: React.FC<SuperSortPropsType> = (
@@ -41,12 +42,13 @@ const SuperSort: React.FC<SuperSortPropsType> = (
             onClick={onChangeCallback}
         >
             {/*сделать иконку*/}
-            {/*<img*/}
-            {/*    id={id + '-icon-' + sort}*/}
-            {/*    src={icon}*/}
-            {/*/>*/}
+            {/* <img
+            id={id + '-icon-' + sort}
+            src={icon}
+            /> */}
 
-            {icon} {/*а это убрать*/}
+            {icon}
+             {/*а это убрать*/}
         </span>
     )
 }

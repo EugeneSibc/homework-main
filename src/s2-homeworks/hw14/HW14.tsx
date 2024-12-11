@@ -31,18 +31,10 @@ const HW14 = () => {
     const [techs, setTechs] = useState<string[]>([])
 
     const sendQuery = (value: string) => {
-        console.log(value)
         setLoading(true)
         getTechs(value)
             .then((res) => {
                 // делает студент
-<<<<<<< HEAD
-                //@ts-ignore                
-=======
-                //@ts-ignore
-                console.log(res.data.techs)
-                
->>>>>>> 07c7a756728bc90da736613d58eb7288fe7f9243
                 setLoading(false)
                 // сохранить пришедшие данные
                 //@ts-ignore
