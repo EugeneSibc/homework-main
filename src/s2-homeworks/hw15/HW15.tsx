@@ -59,7 +59,6 @@ const HW15 = () => {
                 setLoading(false)
                 setTechs(resData.techs)
                 setTotalCount(resData.totalCount)
-                
                 //
             })
     }
@@ -69,12 +68,12 @@ const HW15 = () => {
         setPage(newPage)
         setCount(newCount)
         const params = {
-            sort: '',
+            sort,
             page: String(newPage),
             count: String(newCount)
         }//???
 
-        sendQuery({page:newPage, count:newCount})
+        sendQuery({sort, page:newPage, count:newCount})
         setSearchParams(params)
 
         //
@@ -82,12 +81,16 @@ const HW15 = () => {
 
     const onChangeSort = (newSort: string) => {
         // делает студент
-
         setSort(newSort)
         setPage(1) // при сортировке сбрасывать на 1 страницу
-
-        sendQuery({sort:newSort})
-        setSearchParams( )
+        const params = {
+            sort:newSort,
+            page: String(page),
+            count: String(count)
+        }
+     
+        // sendQuery({sort:newSort, page, count})
+        // setSearchParams(params)
 
         //
     }
@@ -110,7 +113,7 @@ const HW15 = () => {
             </div>
         </div>
     ))
-
+    
     return (
         <div id={'hw15'}>
             <div className={s2.hwTitle}>Homework #15</div>
